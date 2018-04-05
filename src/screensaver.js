@@ -1,21 +1,21 @@
 var screensaver = (function(){
-	
+
 	// https://github.com/bryanbraun/after-dark-css
 	// http://bryanbraun.github.io/after-dark-css/
-	
+
 	var timer,
 		delay = 60000,
 		id = 'screensaver',
 		el;
-	
+
 	function init(){
 		var frag = document.createDocumentFragment();
-		
+
 		var container = document.createElement('div');
 		container.id = 'screensaver';
 		container.className = 'hide';
 		frag.appendChild(container);
-		
+
 		var movingParts = [
 			// First group of objects
 			'toaster t1 p6','toaster t3 p7','toast tst1 p8','toaster t3 p9','toaster t1 p11','toaster t3 p12','toaster t2 p13','toast tst3 p14','toast tst2 p16','toaster t1 p17','toast tst2 p19','toast tst3 p20','toaster t2 p21','toast tst1 p24','toaster t1 p22','toast tst2 p26','toaster t1 p28','toast tst2 p30','toaster t2 p31','toaster t1 p32','toast tst3 p33',
@@ -37,7 +37,7 @@ var screensaver = (function(){
 			div.setAttribute('class', c);
 			container.appendChild(div);
 		});
-		
+
 		var style = document.createElement('style');
 		style.type = 'text/css';
 		style.innerHTML = [
@@ -70,15 +70,15 @@ var screensaver = (function(){
 		].join('');
 		frag.appendChild(style);
 		document.body.appendChild(frag);
-		
+
 		el = document.getElementById(id);
 		timer = setTimeout(trigger, delay);
-		
+
 		// reset on user interaction
 		document.body.addEventListener('mousemove', reset, false);
 		document.body.addEventListener('touchstart', reset, false);
 	}
-	
+
 	function reset(){
 		if (el) {
 			el.className = 'hide';
@@ -86,13 +86,13 @@ var screensaver = (function(){
 			timer = setTimeout(trigger, delay);
 		}
 	}
-	
+
 	function trigger(){
 		if (el) {
 			el.className = '';
 		}
 	}
-	
+
 	return {
 		init: init,
 		reset: reset,
@@ -100,6 +100,6 @@ var screensaver = (function(){
 	};
 }());
 
-window.addEventListener('load', function(event){
-	screensaver.init();
-}, false);
+const init = $(() => screensaver.init());
+
+export default init;
