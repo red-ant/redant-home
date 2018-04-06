@@ -2,7 +2,6 @@ import 'jquery';
 import 'bootstrap';
 
 import './homepage';
-import './screensaver';
 import './grid';
 import './read-more';
 import './screensaver';
