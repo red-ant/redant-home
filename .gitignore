@@ -1,7 +1,5 @@
-_site
 node_modules
 dist
-coverage
 log
 *.log
 *.bak
