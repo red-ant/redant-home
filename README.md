@@ -1,66 +1,88 @@
-# Casper
+# Red Ant Website
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+The [Red Ant Website](https://ra1.ghost.io/) based on [Ghost](https://ghost.org/).
 
-&nbsp;
+This repo contains the Red Ant site theme and routes.yaml file.
 
-![screenshot-desktop](https://user-images.githubusercontent.com/120485/27221326-1e31d326-5280-11e7-866d-82d550a7683b.jpg)
+## Local installation
 
-&nbsp;
+Install Ghost CLI globally
 
-# First time using a Ghost theme?
-
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
-
-We've documented our default theme pretty heavily so that it should be fairly easy to work out what's going on just by reading the code and the comments. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://themes.ghost.org) which explains every possible Handlebars helper and template.
-
-**The main files are:**
-
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
-
-One really neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
-
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
-
-
-# Development
-
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need Node and Gulp installed globally. After that, from the theme's root directory:
-
-```bash
-$ yarn install
-$ yarn dev
+```
+npm install -g ghost-cli@latest
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Run local ghost installation
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-
-```bash
-$ yarn zip
+```
+cd ~/src
+mkdir ghost-blog
+cd ghost-blog
+ghost install local
 ```
 
-# PostCSS Features Used
+Clone and set up this repo
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
+```
+cd ~/src
+git clone git@github.com:red-ant/redant-home.git
+cd redant-home
+yarn install
+```
 
+Create zip of theme (builds to /dist/red-ant.zip)
 
-# SVG Icons
+```
+yarn zip
+```
 
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Open and run ghost
 
-You can add your own SVG icons in the same manner.
+```
+cd ~/src/ghost-blog
+ghost start --development
+open http://localhost:2369/ghost/#/settings/design
+```
 
+Click "Upload a theme" and upload the theme zip (red-ant.zip) so that it gets added to the db.
 
-# Copyright & License
+Open themes and create a symlink to repo
 
-Copyright (c) 2013-2018 Ghost Foundation - Released under the [MIT license](LICENSE).
+```
+cd ~/src/ghost-blog/content/themes
+rm -rf red-ant
+ln -s ~/src/redant-home ~/src/ghost-blog/content/themes/red-ant
+```
+
+## Running locally
+
+Run Ghost and gulp
+
+```
+cd ~/src/ghost-blog
+ghost start --development
+cd ~/src/redant-home
+yarn start
+```
+
+When you're done, stop Ghost
+
+```
+cd ~/src/ghost-blog
+ghost stop
+```
+
+## Updating theme changes on production
+
+Create zip of theme (builds to /dist/red-ant.zip)
+
+```
+cd ~/src/redant-home
+yarn zip
+```
+
+Open [Ghost Admin > Design](https://ra1.ghost.io/ghost/#/settings/design) and replace old theme.
+
+## Updating routes.yaml
+
+To enact changes to routes.yaml, go to your [Ghost Admin > Labs](https://ra1.ghost.io/ghost/#/settings/labs) and "Upload routes YAML".

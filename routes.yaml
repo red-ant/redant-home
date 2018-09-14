@@ -1,0 +1,27 @@
+routes:
+  /about/: pages/about
+  /careers/: pages/careers
+  /contact/: pages/contact
+  /our-approach/: pages/our-approach
+
+collections:
+  /:
+    permalink: /{slug}/
+    template:
+      - index
+  /getting-started/:
+    permalink: /getting-started/{slug}/
+    filter: tag:getting-started
+  /agile/:
+    permalink: /agile/{slug}/
+    filter: tag:agile
+  /digital-products/:
+    permalink: /digital-products/{slug}/
+    filter: tag:digital-products
+  /portfolio/:
+    permalink: /portfolio/{slug}/
+    filter: tag:portfolio
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

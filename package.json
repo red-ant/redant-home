@@ -1,8 +1,8 @@
 {
   "name": "red-ant",
-  "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-  "demo": "https://demo.ghost.io",
+  "description": "Red Ant Website.",
   "version": "0.0.1",
+  "author": "Jason Taylor <jason@redant.com.au>",
   "engines": {
     "ghost": ">=2.0.0"
   },
@@ -15,11 +15,6 @@
     "start": "gulp",
     "zip": "gulp zip",
     "test": "gscan ."
-  },
-  "author": {
-    "name": "Ghost Foundation",
-    "email": "hello@ghost.org",
-    "url": "https://ghost.org"
   },
   "gpm": {
     "type": "theme",

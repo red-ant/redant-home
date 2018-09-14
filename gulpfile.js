@@ -42,7 +42,7 @@ gulp.task('watch', function() {
   gulp.watch('assets/stylesheets/**/*.scss', ['sass']);
 });
 
-gulp.task('zip', ['css'], function() {
+gulp.task('zip', ['sass'], function() {
   var targetDir = 'dist/';
   var themeName = require('./package.json').name;
   var filename = themeName + '.zip';
