@@ -4,10 +4,12 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var livereload = require('gulp-livereload');
 var zip = require('gulp-zip');
+var minify = require('gulp-minify');
 
 // Stylesheet plugins
 var sass = require('gulp-sass');
 var cssnano = require('gulp-cssnano');
+var tildeImporter = require('node-sass-tilde-importer');
 
 var swallowError = function swallowError(error) {
   gutil.log(error.toString());
@@ -19,14 +21,18 @@ var nodemonServerInit = function() {
   livereload.listen(1234);
 };
 
-gulp.task('build', ['sass'], function(/* cb */) {
+gulp.task('build', ['sass', 'js'], function(/* cb */) {
   return nodemonServerInit();
 });
 
 gulp.task('sass', function() {
   return gulp
-    .src('assets/stylesheets/application.scss')
-    .pipe(sass().on('error', sass.logError))
+    .src('./assets/stylesheets/application.scss')
+    .pipe(
+      sass({
+        importer: tildeImporter,
+      }).on('error', sass.logError)
+    )
     .pipe(
       cssnano({
         autoprefixer: {
@@ -38,11 +44,19 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./assets/built/'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('assets/stylesheets/**/*.scss', ['sass']);
+gulp.task('js', function() {
+  return gulp
+    .src(['./assets/application.js'])
+    .pipe(minify())
+    .pipe(gulp.dest('./assets/built/'));
 });
 
-gulp.task('zip', ['sass'], function() {
+gulp.task('watch', function() {
+  gulp.watch('assets/stylesheets/**/*.scss', ['sass']);
+  gulp.watch('assets/stylesheets/application.scss', ['js']);
+});
+
+gulp.task('zip', ['sass', 'js'], function() {
   var targetDir = 'dist/';
   var themeName = require('./package.json').name;
   var filename = themeName + '.zip';

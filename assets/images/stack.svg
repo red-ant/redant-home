@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 268" enable-background="new 0 0 256 268" xml:space="preserve">
+<g id="five" opacity="0.6">
+	<polygon fill="#4040DF" points="128,268 0,194 128,120 256,194"/>
+</g>
+<g id="four" opacity="0.6">
+	<polygon fill="#40908F" points="128,238 0,164 128,90 256,164"/>
+</g>
+<g id="three" opacity="0.6">
+	<polygon fill="#40DF40" points="128,208 0,134 128,60 256,134"/>
+</g>
+<g id="two" opacity="0.6">
+	<polygon fill="#908F40" points="128,178 0,104 128,30 256,104"/>
+</g>
+<g id="one" opacity="0.6">
+	<polygon fill="#DF4040" points="128,148 0,74 128,0 256,74"/>
+</g>
+</svg>

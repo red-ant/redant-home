@@ -1,0 +1,66 @@
+.mac-modal-border {
+  background-image: url('~images/mac-modal/mac-modal-border-side.png');
+  background-repeat: repeat-y;
+  min-width: 6px;
+}
+
+.mac-modal-container {
+  max-width: 600px;
+}
+
+.mac-modal-header {
+  height: 22px;
+
+  .left-corner,
+  .right-corner {
+    background-repeat: no-repeat;
+    min-width: 23px;
+  }
+
+  .left-corner {
+    background-image: url('~images/mac-modal/mac-modal-top-left.png') ;
+  }
+
+  .right-corner {
+    background-image: url('~images/mac-modal/mac-modal-top-right.png');
+    background-position: right;
+  }
+
+  .mac-modal-title {
+    background-image: url('~images/mac-modal/mac-modal-title.png');
+    background-repeat: no-repeat;
+    min-width: 119px;
+  }
+
+  .mac-modal-border-top {
+    background-image: url('~images/mac-modal/mac-modal-border-top.png');
+    background-repeat: repeat-x;
+    width: 100%;
+  }
+}
+
+.mac-modal-footer {
+  height: 38px;
+
+  .left-corner,
+  .right-corner {
+    background-repeat: no-repeat;
+  }
+
+  .left-corner {
+    background-image: url('~images/mac-modal/mac-modal-bottom-left.png');
+    min-width: 6px;
+  }
+
+  .right-corner {
+    background-image: url('~images/mac-modal/mac-modal-bottom-right.png');
+    background-position: right;
+    min-width: 177px;
+  }
+
+  .mac-modal-border-bottom {
+    background-image: url('~images/mac-modal/mac-modal-border-bottom.png');
+    background-repeat: repeat-x;
+    width: 100%;
+  }
+}

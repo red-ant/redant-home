@@ -1,0 +1,43 @@
+.dark-header {
+  position: relative;
+  background-size: cover;
+  color: $white;
+  margin-top: 61px;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba($black, 0.8);
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0px;
+  }
+}
+
+.project-header {
+  position: relative;
+  width: 100%;
+  padding-top: $navbar-height;
+  margin-bottom: -2 * $navbar-height;
+  overflow: hidden;
+
+  svg {
+    z-index: 5;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 480px;
+
+    .project-header-content {
+      margin-top: -200px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 360px;
+    margin-bottom: 0;
+  }
+}

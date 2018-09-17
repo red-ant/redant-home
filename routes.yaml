@@ -1,4 +1,5 @@
 routes:
+  /: index
   /about/: pages/about
   /careers/: pages/careers
   /contact/: pages/contact

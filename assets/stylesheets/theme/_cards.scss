@@ -1,0 +1,26 @@
+.card {
+  border: none;
+
+  .card-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .card-block {
+    color: $black;
+
+    .card-title {
+      font-size: 1.15rem;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background-color: $gray-300;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.main-layout {
+  position: relative;
+  max-width: $layout-max-width;
+  margin: auto;
+  background-color: $white;
+}
+
+.homepage {
+  .ruby {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-image: url('~images/ruby.png');
+    height: 100%;
+    min-height: 200px;
+  }
+}
+
+.project-content {
+  img {
+    @extend .img-fluid;
+  }
+}
+
+.project-detail-container {
+  padding: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &.section-border {
+    padding-bottom: 40px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 0px;
+  }
+}

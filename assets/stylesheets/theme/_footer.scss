@@ -1,0 +1,22 @@
+.footer {
+  font-size: 0.9375rem;
+
+  .icon-list {
+    padding-left: $grid-gutter-width / 2 + 10 ;
+
+    .fa {
+      left: $grid-gutter-width / 2;
+      position: absolute;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .icon-list {
+      padding-left: 10px;
+
+      .fa {
+        left: 0;
+      }
+    }
+  }
+}

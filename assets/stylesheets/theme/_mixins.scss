@@ -1,0 +1,6 @@
+@mixin block($background-color: $red) {
+  width: 38px;
+  height: 4px;
+  margin-left: 0;
+  background-color: $background-color;
+}

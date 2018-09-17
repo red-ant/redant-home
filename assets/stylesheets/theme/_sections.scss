@@ -1,0 +1,259 @@
+.padded-section {
+  padding: 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: $grid-gutter-width * 3 0;
+  }
+}
+
+.dark-section {
+  color: $white;
+  background-color: $black;
+}
+
+.list-section {
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.arrow-section {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -52px;
+    left: 50%;
+    margin-left: -100px;
+    border-style: solid;
+    border-width: 52px 100px 0 100px;
+    border-color: $gray-100 transparent transparent transparent;
+  }
+}
+
+.canvas-section {
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .parallax-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .parallax-layer {
+      width: 100%;
+      height: 100%;
+
+      .step-img {
+        margin: auto;
+      }
+
+      .parallax-content {
+        width: 170%;
+        height: 170%;
+        margin-top: -20%;
+        margin-left: -20%;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.diamond-section {
+  width: 100%;
+
+  .diamond-1,
+  .diamond-2,
+  .diamond-3,
+  .diamond-4,
+  .diamond-5,
+  .diamond-6,
+  .diamond-7,
+  .diamond-8 {
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 164px;
+  }
+
+  .diamond-1 {
+    background-image: url('~images/home-diamonds/diamond-1.png');
+  }
+
+  .diamond-2 {
+    background-image: url('~images/home-diamonds/diamond-2.png');
+  }
+
+  .diamond-3 {
+    background-image: url('~images/home-diamonds/diamond-3.png');
+  }
+
+  .diamond-4 {
+    background-image: url('~images/home-diamonds/diamond-4.png');
+  }
+
+  .diamond-5 {
+    background-image: url('~images/home-diamonds/diamond-5.png');
+  }
+
+  .diamond-6 {
+    background-image: url('~images/home-diamonds/diamond-6.png');
+  }
+
+  .diamond-7 {
+    background-image: url('~images/home-diamonds/diamond-7.png');
+  }
+
+  .diamond-8 {
+    background-image: url('~images/home-diamonds/diamond-8.png');
+  }
+
+  .diamond-row-2,
+  .diamond-row-3 {
+    margin-top: -78px;
+  }
+}
+
+.hero-section {
+  background-image: url('~images/home-bg-1.jpg');
+  background-position: center;
+  min-height: 100vh;
+}
+
+.how-section {
+  background-image: url('~images/home-bg-2.jpg');
+  background-position: right center;
+}
+
+.hero-section,
+.how-section {
+  background-repeat: no-repeat;
+  color: $white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .dark-overlay {
+    background-color: $black;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.step-img {
+  display: block;
+  width: 100%;
+  height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &.portfolio-1 {
+    background-image: url('~images/home-portfolio/12wbt.jpg');
+  }
+
+  &.portfolio-2 {
+    background-image: url('~images/home-portfolio/tribe.jpg');
+  }
+
+  &.portfolio-3 {
+    background-image: url('~images/home-portfolio/voome-weekly.jpg');
+  }
+
+  &.portfolio-4 {
+    background-image: url('~images/home-portfolio/huggies.jpg');
+  }
+
+  &.portfolio-5 {
+    background-image: url('~images/home-portfolio/nps.jpg');
+  }
+
+  &.portfolio-6 {
+    background-image: url('~images/home-portfolio/realpetmatcher.jpg');
+  }
+}
+
+.section-border {
+  border-top: 1px solid $gray-smoke;
+  border-bottom: 1px solid $gray-smoke;
+  padding-bottom: 50px;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 100px;
+  }
+}
+
+.jumbotron {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .hero-section {
+    background-position: 75% 50%;
+    margin-top: 61px;
+  }
+
+  .diamond-section {
+    .diamond-row-2,
+    .diamond-row-3 {
+      margin-top: -98px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .diamond-section {
+    .diamond-row-2,
+    .diamond-row-3 {
+      margin-top: 0px;
+    }
+
+    .diamond-2,
+    .diamond-3,
+    .diamond-4,
+    .diamond-5,
+    .diamond-6,
+    .diamond-7,
+    .diamond-8 {
+      margin-top: -76px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .diamond-section {
+    .diamond-2,
+    .diamond-3,
+    .diamond-4,
+    .diamond-5,
+    .diamond-6,
+    .diamond-7,
+    .diamond-8 {
+      margin-top: -94px;
+    }
+  }
+}

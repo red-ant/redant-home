@@ -1,0 +1,54 @@
+.bg-angled {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0 0 480px 780px;
+  border-color: transparent;
+  border-bottom-color: $white;
+
+  @include media-breakpoint-up(sm) {
+    border-width: 0 0 620px 1080px;
+  }
+}
+
+.bg-black {
+  background-color: $black;
+  color: $white;
+}
+
+.bg-gray-light {
+  background-color: $gray-100;
+}
+
+.bg-gray {
+  background-color: $gray-400;
+}
+
+.bg-mac-modal {
+  background-color: $gray-200;
+}
+
+.bg-pattern-dot {
+  background-image: url('~images/pattern-dot.jpg');
+  background-repeat: repeat;
+}
+
+.bg-our-approach {
+  background-image: url('~images/our-approach.jpg');
+
+  &.padded-section {
+    padding: 150px 0 90px 0;
+  }
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+@each $name, $value in $project-colors {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}

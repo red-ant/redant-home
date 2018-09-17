@@ -1,0 +1,148 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  max-width: $layout-max-width;
+  padding: 14px 0;
+  background-color: $white;
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .logo {
+    height: 32px;
+  }
+}
+
+.nav-toggle-icon {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  z-index: 101;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: $red;
+    border-radius: 9px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 12px;
+    }
+
+    &:nth-child(4) {
+      top: 24px;
+    }
+  }
+}
+
+.nav-overlay {
+  align-items: flex-start;
+  z-index: 100;
+
+  .nav-links {
+    display: none;
+    padding: 5% 0;
+    border-top: 3px solid $gray-400;
+    border-bottom: 3px solid $gray-400;
+
+    .links {
+      list-style: none;
+      font-size: 1.75rem;
+      font-weight: 600;
+      padding-left: 58px;
+
+      [data-aos='nav-link-inactive'].aos-animate a,
+      [data-aos='nav-link-active'],
+      a {
+        color: $white;
+        transition-property: color;
+      }
+
+      [data-aos='nav-link-active'],
+      a {
+        &.aos-animate,
+        &.active,
+        &:focus,
+        &:hover {
+          color: $red;
+          text-decoration: none;
+        }
+
+        &.active:before {
+          background-color: $red;
+          content: '';
+          display: block;
+          height: 4px;
+          margin-left: -54px;
+          margin-top: 18px;
+          position: absolute;
+          width: 38px;
+        }
+      }
+    }
+  }
+
+  &.open {
+    background-color: rgba($black, 0.9);
+    height: 100%;
+    width: 100%;
+
+    .navbar-brand {
+      display: none;
+    }
+
+    .nav-toggle-icon {
+      span {
+        &:nth-child(1),
+        &:nth-child(4) {
+          width: 0;
+          top: 18px;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .nav-links {
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    top: 0;
+
+    .nav-links {
+      padding: 15% 0;
+
+      .links {
+        [data-aos='nav-link'],
+        a {
+          &::before {
+            margin-top: $font-size-base * 1.4;
+          }
+        }
+      }
+    }
+  }
+}

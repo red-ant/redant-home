@@ -1,0 +1,32 @@
+.modal-dialog {
+  max-width: $layout-max-width !important;
+  padding: 0 $grid-gutter-width;
+  // width: 100%;
+  // margin: 0;
+
+  .modal-content {
+    border: none;
+    background-color: transparent;
+
+    .modal-header {
+      padding-bottom: 0;
+      border-bottom: none;
+
+      .close {
+        margin-right: -$grid-gutter-width;
+        color: $white;
+        font-size: 3rem;
+        text-shadow: none;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+  }
+}
