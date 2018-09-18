@@ -1,0 +1,39 @@
+---
+layout: post
+title: Earth Hour 2008
+permalink: /ruby-on-rails/earth-hour-2008/
+type: news
+categories:
+- our-work
+- ruby-on-rails
+author: Ben Still
+image:
+  small: http://farm3.static.flickr.com/2094/2117180190_144e166d95_o.jpg
+  big: http://farm3.static.flickr.com/2094/2117180190_144e166d95_o.jpg
+meta:
+  dsq_thread_id: '479978235'
+  keywords: earth hour
+  description: Earth Hour 2008
+excerpt:
+  short: Last March, Sydney had an event called Earth Hour. Teaming up with Leo Burnett, we designed and built the website for what has become an iconic event across the world.
+  long: Earth Hour. It's a term millions of people across the world have heard of and it sparked up right here in little old Sydney. Leo Burnett had the idea, Red Ant had the mad skillz to build it into something lovely.
+---
+
+Well, it was a great success and Sydney ended up saving about 25
+tonnes
+of CO2 emissions. This year, it's become a global event. At 8pm on the
+29 March 2008, hopefully millions of people in different cities around
+the world are going to turn their lights off.
+
+On Friday morning we helped launch a small part of Earth Hour 2008:
+[www.earthhour.org](http://www.earthhour.org)
+
+[![earth hour
+banner](http://farm3.static.flickr.com/2094/2117180190_144e166d95_o.jpg
+"earth hour banner")](http://www.earthhour.org)
+
+Working with Leo Burnett, we created the site in Rails, with Radiant
+for
+content management. There is quite a lot of flash video, so we used
+Lighttpd for better performance for streaming FLV video, with the rest
+of the site on several Mongrel webservers.

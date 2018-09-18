@@ -12,7 +12,7 @@
     </g>
     <g class="one square">
       <polygon fill="#DF4040" opacity="0.6" points="128,208 0,134 128,60 256,134"></polygon>
-      <text x="60" y="140" font-family="Verdana" font-size="14" fill="white">UX & Design</text>
+      <text x="82" y="140" font-family="Verdana" font-size="14" fill="white">UX & Design</text>
     </g>
   </g>
 </svg>

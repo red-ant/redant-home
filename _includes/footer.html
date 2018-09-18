@@ -1,4 +1,4 @@
-<section class="py-5 bg-gray-light text-md">
+<section id="footer" class="ga-section py-5 bg-gray-light text-md">
   <div class="container">
     <div class="row">
       <div class="col-md-7">
@@ -57,7 +57,7 @@
         <ul class="unstyled-list icon-list">
           <li>
             <i class="fa fa-map-marker"></i>
-            <a href="https://goo.gl/maps/Wf8NtVYcw9N2" target="_blank">
+            <a href="https://goo.gl/maps/aecDcCLqKCm" target="_blank">
               Find us on street view
             </a>
           </li>
@@ -92,7 +92,3 @@
 <script src="{{ site.data.webpack['meta.js'] }}"></script>
 <script src="{{ site.data.webpack['vendor.js'] }}"></script>
 <script src="{{ site.data.webpack['app.js'] }}"></script>
-
-{% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-{% endif %}

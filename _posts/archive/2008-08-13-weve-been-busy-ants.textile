@@ -1,0 +1,94 @@
+---
+layout: post
+title: We’ve been busy ants
+permalink: /our-work/weve-been-busy-ants/
+type: news
+categories:
+  - our-work
+author: Ben Still
+image :
+  small: /assets/uploads/2008/07/ant-small.jpg
+  big: /assets/uploads/2008/07/ant-large.jpg
+meta:
+  dsq_thread_id: '524834144'
+excerpt:
+  short: We’ve been busy little ants over the last few months
+  long: "We’ve been busy little ants over the last few months _(as you can probably tell from the flurry of blog posts here)_. There have been quite a few that have launched in the last weeks - here are some:"
+---
+
+h2. Huggies Baby Name Finder
+
+"!/assets/uploads/2008/08/bnf.jpg(Baby Name finder)!":http://huggies.com.au/babynames/
+
+The Baby Name finder is an AJAX tool that helps you look up baby names, as well as create a list of favourites to share. We referenced these names against names that members had already chosen for their children - so if you’re thinking about Joshua, we can show you the ten most popular sibling names from families that already have a Joshua.
+
+"http://huggies.com.au/babynames/":http://huggies.com.au/babynames/
+
+h2. Ultraserve
+
+"!/assets/uploads/2008/08/ultraserve.jpg(Ultraserve)!":http://www.ultraserve.com.au/
+
+A redesign project for the mighty Ultraserve, done in Ruby using Radiant as the CMS.
+
+"http://www.ultraserve.com.au":http://www.ultraserve.com.au
+
+h2. Mums & Bubs TV
+
+"!/assets/uploads/2008/08/mumsandbubs.jpg(Mums and Bubs)!":http://huggies.com.au/MumsAndBubsTV/
+
+Another Huggies project- This has been / is quite a large project, involving the coordination of web site content and a TV schedule, as well as live chat and regular updates. Also includes a large consumer promotion, where you can win a pretty nice looking Volvo.
+
+"http://huggies.com.au/MumsAndBubsTV/":http://huggies.com.au/MumsAndBubsTV/
+
+h2. Orix
+
+"!/assets/uploads/2008/08/orix.jpg(Orix web site)!":http://www.orix.com.au/
+
+We’re thrilled to see this project go live! With operations in 23 countries and regions worldwide, ORIX’s activities include leasing, corporate finance, real estate-related finance and development, life insurance, and investment and retail banking.
+
+Please be sure to stop by the "Novated Lease Calculator":http://www.orix.com.au/, and the wondrous accordion FAQs
+
+"http://www.orix.com.au":http://www.orix.com.au
+
+h2. Oxfam Trailwalker
+
+"!/assets/uploads/2008/08/oxfam.jpg(Oxfam Trailwalker)!":http://www2.oxfam.org.au/trailwalker/Melbourne
+
+A dotNet project with extensive javascript and AJAX, we’re working together with the Oxfam team to build this application for the Trailwalker project.
+
+"http://www2.oxfam.org.au/trailwalker/Melbourne":http://www2.oxfam.org.au/trailwalker/Melbourne
+
+h2. Kleenex Cottonelle
+
+"!/assets/uploads/2008/08/cottonelle.jpg(Kleenex Cottonelle site)!":http://www.kleenexpuppy.com.au
+
+The Puppy gets a new site!
+
+"http://www.kleenexpuppy.com.au":http://www.kleenexpuppy.com.au
+
+h2. INO Therapeutics Clinical Trial Site
+
+"!/assets/uploads/2008/08/ino.jpg(INO Therapeutics site)!":#
+
+An extranet application for managing clinical trials for INO Therapeutics, with secure document library and user management. This was built with "Ruby on Rails":/blog/why-we-use-ruby-on-rails, with a design by our award winning Mr Kap.
+
+"http://clinicaltrials.inotherapeutics.com/":#
+
+h2. Wondersoft Design Competition
+
+"!/assets/uploads/2008/08/wondersoft.jpg(Wondersoft site)!":http://www.wondersoft.com.au/
+
+Voting has just finished on this small interactive tool that we created to allow people to vote on their favourite design by primary school children- something which turned out to be incredibly popular with tens of thousands of people voting in a day.
+
+"http://www.wondersoft.com.au":http://www.wondersoft.com.au
+
+h2. Books Alive
+
+"!/assets/uploads/2008/08/books-alive.jpg(Books Alive site)!":http://www.booksalive.com.au
+
+Another "Ruby on Rails":http://www.rubyonrails.org/ and "Radiant":http://radiantcms.org/ project, but this one is just a prelude to the much larger site that we’re beavering away at right now. The preview site contains a useful countdown, so you know exactly how many sleeps to go until the big site goes live.
+
+"http://www.booksalive.com.au":http://www.booksalive.com.au
+
+
+_image credit: "Sancho McCann":https://www.flickr.com/photos/sanchom/_

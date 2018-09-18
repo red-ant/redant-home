@@ -10,6 +10,9 @@ url: "https://redant.com.au" # the base hostname & protocol for your site, e.g. 
 permalink: /:title/
 markdown: kramdown
 google_analtyics: UA-421251-1
+gtm:
+  dev: GTM-P7QNBDH
+  prod: GTM-N3CM249
 
 # Jekyll Plugins
 plugins:
@@ -19,6 +22,7 @@ plugins:
 # Include for processing.
 include:
   - _pages
+  - _posts
   - portfolio
 
 # Exclude from processing.
@@ -40,3 +44,5 @@ exclude:
   - legacy
   - .release-it.json
   - .stage
+  - archive
+  - drafts

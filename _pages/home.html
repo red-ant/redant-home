@@ -4,14 +4,14 @@ permalink: /
 class: homepage
 ---
 
-<header class="padded-section canvas-section hero-section d-flex align-items-center">
+<header id="section-intro" class="ga-section padded-section canvas-section hero-section d-flex align-items-center">
   <div class="container">
     <div class="row">
-  		<div class="col-md-6">
-  		  <h1 data-aos="fade-right" data-aos-once="true">
+      <div class="col-md-6">
+        <h1 data-aos="fade-right" data-aos-once="true">
           We’re a tech agency that delivers amazing digital products.
         </h1>
-  		  <hr data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
+        <hr data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
       </div>
     </div>
     <div class="row">
@@ -19,19 +19,23 @@ class: homepage
         <p class="text-md" data-aos="fade-right" data-aos-once="true" data-aos-delay="400">
           We dream, shape and build them. These are products for a new type of consumer. <br/><br/>
           Like the one on your site right now.
-  		  </p>
+        </p>
       </div>
     </div>
   </div>
 </header>
 
-<section id="platform" class="bg-pattern-dot padded-section">
+
+{% include section-ruby-rails.html %}
+
+
+<section id="section-platforms" class="ga-section bg-pattern-dot padded-section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h4 class="text-center my-4 my-md-5 pt-4 pb-2">
+        <h2 class="h4 text-center my-4 my-md-5 pt-4 pb-2">
           We create products that help people
-        </h4>
+        </h2>
       </div>
 
       <div class="col-md-12">
@@ -111,10 +115,10 @@ class: homepage
           <p class="text-md">
             You can muck around all you like working on a “digital strategy” with management consultants and ad agencies. You can sit and dream about how awesome your idea would be if that offshore dev team you’re using actually understood, like, anything. At all.
           </p>
-      		<p class="text-md">
+          <p class="text-md">
             Or, we could get cracking and make something. Get it in front of users. Build for scale. Iterate.
           </p>
-      		<p class="text-md">
+          <p class="text-md">
             Sound interesting? Then come and talk to us. Let’s make something awesome together.
           </p>
         </div>
@@ -123,7 +127,7 @@ class: homepage
   </div>
 </section>
 
-<section class="section-border" data-aos-anchor-placement="center-center">
+<section id="section-things-we-made" class="ga-section section-border" data-aos-anchor-placement="center-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -205,7 +209,7 @@ class: homepage
   </div>
 </section>
 
-<section class="navbar-aos padded-section how-section">
+<section id="section-how-we-do-it" class="ga-section navbar-aos padded-section how-section">
   <div class="container py-5 py-sm-0">
     <div class="row">
       <div class="col">
@@ -220,10 +224,10 @@ class: homepage
 
           <p>We're super cross functional. We provide a blended team of UX, strategy and technology. Local not offshore.
         </p>
-    		<p>
+        <p>
           Our tech stack is Open Source, and we use Agile to manage projects. We also have our pretty nifty project tracking platform that we’ve created to make us more efficient. Real time progress tracking, complete sprint management and project cadence.
         </p>
-    		<p>
+        <p>
           The things we make don’t just look good. They need to perform extremely well. We’re no slouch in that department - our team is very experienced on complex, high traffic projects. We use a lot of Ruby on Rails (the same framework that is used by companies like AirBnB, Kickstarter and Twitter). Quite simply it’s fast, powerful, and nice to develop with. It plays well with other technologies, and is perfect for Agile work practices such as rapid prototyping.
         </p>
       </div>
@@ -245,53 +249,9 @@ class: homepage
   </div>
 </section>
 
-<section class="navbar-aos padded-section text-md bg-gray-light">
-  <div class="container py-5 py-sm-0">
-    <div class="row d-block d-sm-none">
-      <div class="col">
-        <div class="ruby"></div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <h4>Ruby on Rails</h4>
-      </div>
-    </div>
 
-    <div class="row mt-4">
-      <div class="col-md-8">
-        <p>
-          <strong>The efficient way to build modern digital products.</strong>
-        </p>
-    		<p>
-          You might have heard of Ruby on Rails – it’s a “development framework” which makes designing and building modern web sites and digital products <a href="https://news.redant.com.au/getting-more-efficient-with-our-ruby-on-rails-projects-196425624cc8">more efficient</a>. Ruby on Rails is a popular choice for building modern, interactive web sites and apps.
-        </p>
-
-        <div class="collapse-group">
-    		  <div class="collapse" id="more-about-rails">
-            <p>
-              Ruby on Rails speeds up many of the simple tasks, and allows for extremely rapid creation of prototypes and working code. It also uses “best practice” by default, so you’re not relying on the whim of a particular developer. Of course, having a smart developer is critical, and Rails allows them to translate ideas and concepts quickly and efficiently.
-            </p>
-            <p>
-              Working in an Agile fashion, we can create code that can then be reviewed that day. We might be heading in the right direction, or it might need to behave differently. Rapid change and evolution is a good thing. Using Ruby on Rails facilitates this.
-            </p>
-            <p>
-              Ruby on Rails also helps us create very high quality code. Each part of code has <a href="https://news.redant.com.au/testing-web-projects-64ee5146f55a">a series of Automated Tests</a>. These perform checks to make sure that feature is working as it should. These get run every time a change is made. By doing this, we know that one change hasn’t broken something else. As soon as anything breaks or changes, our Continuous Integration server lets us know and the code is fixed.
-            </p>
-		      </div>
-
-          <a href="#more-about-rails" class="more" data-toggle="collapse" data-target="#more-about-rails">Read more...</a>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-none d-sm-block">
-      <div class="ruby" data-aos="fade-left" data-aos-once="true"></div>
-    </div>
-  </div>
-</section>
-
-<section class="carousel-wrapper">
+<section id="section-stuff-we-made" class="ga-section carousel-wrapper">
   <div class="carousel-nav">
     <div class="container">
       <div class="row">

@@ -1,6 +1,8 @@
 ---
 layout: default
 permalink: /portfolio/
+title: Our Porfolio
+description: It isn't just good design, or a good user experience.  Great digital products come about when these blend together.
 ---
 
 <header class="dark-header padded-section">
@@ -20,14 +22,14 @@ permalink: /portfolio/
     {% for slug in site.data.portfolio.order %}
       {% assign pages = site.pages | where:'slug', slug %}
       {% for page in pages %}
-        <div class="card mb-1">
+        <div id="section-card-{{ page.title | downcase | replace: ' ', '-' }}" class="ga-section card mb-1">
           <a href="{{ page.dir }}" class="portfolio-tile bg-gray bg-{{ page.theme }}">
             <div class="content mb-2">
               <h2>{{ page.title }}</h2>
               <div class="hr-wrapper">
                 <hr class="hr-white">
               </div>
-              <h5 class="my-4">{{ page.tagline }}</h5>
+              <h3 class="h5 my-4">{{ page.tagline }}</h3>
               <p>{{ page.description }}</p>
             </div>
             <div class="svg-container">

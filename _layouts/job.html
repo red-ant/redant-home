@@ -10,8 +10,7 @@
 <body class="{{ page.class }}">
   <div class="main-layout">
     {% include nav.html %}
-
-    <header class="dark-header padded-section">
+    <header id="section-intro" class="ga-section dark-header padded-section">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -23,16 +22,15 @@
       </div>
     </header>
 
-    <section class="jumbotron bg-gray-light py-5">
+    <section id="section-job-summary"  class="ga-section jumbotron bg-gray-light py-5">
       <div class="container">
         <p class="summary">{{ page.summary }}</p>
       </div>
     </section>
 
-    <section class="py-5">
+    <section id="section-job-content" class="ga-section py-5">
       <div class="container">
         {{ content }}
-
       </div>
     </section>
 

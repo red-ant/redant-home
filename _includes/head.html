@@ -13,4 +13,8 @@
   <!-- Fonts -->
   <script src="//use.typekit.net/apo0vqh.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
+
+  {% if site.gtm %}
+    {% include gtm.html %}
+  {% endif %}
 </head>
