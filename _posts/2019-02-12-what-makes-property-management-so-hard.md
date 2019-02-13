@@ -9,8 +9,8 @@ author: Ben Still
 description: From the outside looking in, the property management business looks pretty simple.
 keywords: ai development, machine learning, automated tests
 date: 2019-02-12 02:31:36 +0000
-image-small: "/assets/uploads/2018/extra_large-1498661132-cover-image-1.jpg"
-image-large: "/assets/uploads/2018/extra_large-1498661132-cover-image.jpg"
+image-small: "/assets/uploads/2019/managed-property-management.jpg"
+image-large: "/assets/uploads/2019/managed-property-management.jpg"
 excerpt-short: From the outside looking in, the property management business looks pretty simple.
 excerpt-long: From the outside looking in, the property management business looks pretty simple.
 tags: []
