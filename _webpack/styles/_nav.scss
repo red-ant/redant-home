@@ -68,10 +68,12 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
+    padding: 18px 0;
     z-index: 100;
     background-color: rgba($black, 0.9);
 
-    .navbar-brand {
+    .navbar-brand,
+    .contact-us {
       display: none;
     }
 
