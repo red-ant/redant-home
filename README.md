@@ -1,5 +1,6 @@
 # Red Ant Website
 
+[![Build Status](https://travis-ci.com/red-ant/redant-home.svg?token=ZAq9HWcZpnzbxVNmp3JF&branch=master)](https://travis-ci.com/red-ant/redant-home)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 The Red Ant Website based on [Jekyll + Webpack](https://github.com/red-ant/jekyll-webpack).
